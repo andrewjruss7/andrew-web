@@ -83,6 +83,76 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
+        <div className="project-card">
+          <div className="project-preview">
+            <iframe
+              src="https://programamos-seven.vercel.app"
+              title="Programamos Seven"
+              className="project-iframe"
+              loading="lazy"
+            />
+            <div className="project-overlay">
+              <a 
+                href="https://programamos-seven.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <ExternalLink size={24} />
+                Ver proyecto completo
+              </a>
+            </div>
+          </div>
+          <div className="project-info">
+            <h3 className="font-bold text-xl mb-2">Programamos Seven</h3>
+            <p className="text-[#68707d] font-medium mb-3">
+              Escuela de programación en Sincelejo. Plataforma web moderna con cursos de Frontend, Backend y Fullstack. 
+              Incluye sistema de inscripciones, galería de proyectos y diseño responsive.
+            </p>
+            <div className="project-tech">
+              <span className="tech-tag">React</span>
+              <span className="tech-tag">Next.js</span>
+              <span className="tech-tag">TypeScript</span>
+              <span className="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <div className="project-preview">
+            <iframe
+              src="https://demo-vanessa.vercel.app"
+              title="Demo Vanessa - Skate Facilities"
+              className="project-iframe"
+              loading="lazy"
+            />
+            <div className="project-overlay">
+              <a 
+                href="https://demo-vanessa.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <ExternalLink size={24} />
+                Ver proyecto completo
+              </a>
+            </div>
+          </div>
+          <div className="project-info">
+            <h3 className="font-bold text-xl mb-2">Skate Facilities</h3>
+            <p className="text-[#68707d] font-medium mb-3">
+              Landing page para instalaciones de patinaje portátiles. Diseño moderno con enfoque en sostenibilidad, 
+              materiales reutilizables y instalación rápida. Incluye hero section impactante y sección de características.
+            </p>
+            <div className="project-tech">
+              <span className="tech-tag">React</span>
+              <span className="tech-tag">Next.js</span>
+              <span className="tech-tag">TypeScript</span>
+              <span className="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
