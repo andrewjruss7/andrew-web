@@ -47,18 +47,13 @@ export class EmailService {
         throw new Error('EmailJS no está configurado correctamente');
       }
       
-      // Crear el template de plan Starter
-      const template = createPlanStarterTemplate(userData);
-      
       // Preparar los datos para EmailJS con template de starter
       const templateParams = {
-        to_name: userData.name,
         to_email: userData.email,
-        subject: template.subject,
-        message: template.html,
+        from_name: 'Andrew',
+        from_email: 'andrewjruss7@gmail.com',
         user_name: userData.name,
-        user_email: userData.email,
-        user_message: userData.message || ''
+        subject: 'Tu plan Starter para construir tu página web - Andrew'
       };
       
       // Enviar el email con publicKey explícita
