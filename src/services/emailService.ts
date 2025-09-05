@@ -3,7 +3,7 @@ import { createPlanStarterTemplate, createNotificationTemplate } from '@/utils/e
 
 // Configuración de EmailJS
 const EMAILJS_SERVICE_ID = (process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '').trim();
-const EMAILJS_TEMPLATE_ID = (process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '').trim();
+const EMAILJS_TEMPLATE_ID = 'template_5r79pts'; // Template de Plan Starter
 const EMAILJS_PUBLIC_KEY = (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '').trim();
 
 export interface ContactFormData {
@@ -47,18 +47,13 @@ export class EmailService {
         throw new Error('EmailJS no está configurado correctamente');
       }
       
-      // Crear el template de plan Starter
-      const template = createPlanStarterTemplate(userData);
-      
       // Preparar los datos para EmailJS con template de starter
       const templateParams = {
-        to_name: userData.name,
         to_email: userData.email,
-        subject: template.subject,
-        message: template.html,
+        from_name: 'Andrew',
+        from_email: 'andrewjruss7@gmail.com',
         user_name: userData.name,
-        user_email: userData.email,
-        user_message: userData.message || ''
+        subject: 'Tu plan Starter para construir tu página web - Andrew'
       };
       
       // Enviar el email con publicKey explícita
