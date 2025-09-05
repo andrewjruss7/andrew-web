@@ -39,6 +39,13 @@ export class EmailService {
    */
   public async sendPlanStarterEmail(userData: ContactFormData): Promise<EmailResult> {
     try {
+      // Debug: Log de las variables de entorno
+      console.log('EmailJS Config Debug:', {
+        serviceId: EMAILJS_SERVICE_ID,
+        templateId: EMAILJS_TEMPLATE_ID,
+        publicKey: EMAILJS_PUBLIC_KEY ? 'Presente' : 'Ausente'
+      });
+      
       if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
         throw new Error('EmailJS no está configurado correctamente');
       }
