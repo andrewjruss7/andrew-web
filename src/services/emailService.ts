@@ -4,7 +4,7 @@ import { createPlanStarterTemplate, createNotificationTemplate } from '@/utils/e
 // Configuración de EmailJS
 const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '';
 const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '';
-const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '';
+const EMAILJS_PUBLIC_KEY = (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '').trim();
 
 export interface ContactFormData {
   name: string;
@@ -21,10 +21,7 @@ export class EmailService {
   private static instance: EmailService;
   
   private constructor() {
-    // Inicializar EmailJS
-    if (typeof window !== 'undefined') {
-      emailjs.init(EMAILJS_PUBLIC_KEY);
-    }
+    // No inicializar EmailJS aquí - se pasa la publicKey directamente en cada send
   }
   
   public static getInstance(): EmailService {
@@ -61,11 +58,12 @@ export class EmailService {
         user_message: userData.message || ''
       };
       
-      // Enviar el email
+      // Enviar el email con publicKey explícita
       const result = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
-        templateParams
+        templateParams,
+        { publicKey: EMAILJS_PUBLIC_KEY } // << clave explícita
       );
       
       console.log('Email enviado exitosamente:', result);
@@ -106,11 +104,12 @@ export class EmailService {
         from_email: userData.email
       };
       
-      // Enviar el email
+      // Enviar el email con publicKey explícita
       const result = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
-        templateParams
+        templateParams,
+        { publicKey: EMAILJS_PUBLIC_KEY } // << clave explícita
       );
       
       console.log('Notificación enviada exitosamente:', result);
