@@ -50,13 +50,12 @@ export class EmailService {
         throw new Error('EmailJS no está configurado correctamente');
       }
       
-      // Preparar los datos para EmailJS (el template ya tiene el HTML completo)
+      // Preparar los datos para EmailJS con template simple
       const templateParams = {
-        to_email: userData.email,
         to_name: userData.name,
-        subject: 'Tu plan Starter para construir tu página web - Andrew',
-        from_name: 'Andrew',
-        from_email: 'andrewjruss7@gmail.com',
+        to_email: userData.email,
+        subject: 'Prueba de EmailJS - Andrew',
+        message: userData.message || 'Mensaje de prueba',
         user_name: userData.name,
         user_email: userData.email,
         user_message: userData.message || ''
