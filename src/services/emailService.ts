@@ -47,12 +47,15 @@ export class EmailService {
         throw new Error('EmailJS no está configurado correctamente');
       }
       
-      // Preparar los datos para EmailJS con template simple
+      // Crear el template de plan Starter
+      const template = createPlanStarterTemplate(userData);
+      
+      // Preparar los datos para EmailJS con template de starter
       const templateParams = {
         to_name: userData.name,
         to_email: userData.email,
-        subject: 'Prueba de EmailJS - Andrew',
-        message: userData.message || 'Mensaje de prueba',
+        subject: template.subject,
+        message: template.html,
         user_name: userData.name,
         user_email: userData.email,
         user_message: userData.message || ''
@@ -70,7 +73,7 @@ export class EmailService {
       
       return {
         success: true,
-        message: 'Email enviado exitosamente'
+        message: '¡Perfecto! Revisa tu email, te hemos enviado toda la información del plan Starter.'
       };
       
     } catch (error) {
