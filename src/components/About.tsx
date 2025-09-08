@@ -57,7 +57,7 @@ export default function About() {
           </p>
           
           <h3 className="text-xl sm:text-2xl m-0 mb-4 font-bold">Cómo trabajo</h3>
-          <ul className="steps list-none p-0 m-0 grid grid-cols-1 gap-4 max-w-md mx-auto lg:max-w-none lg:mx-0">
+          <ul className="steps list-none p-0 m-0 grid grid-cols-1 gap-4 w-full max-w-sm mx-auto lg:max-w-none lg:mx-0">
             {features.map((feature, index) => (
               <li 
                 key={index} 
