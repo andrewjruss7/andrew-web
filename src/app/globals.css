@@ -66,25 +66,25 @@ body {
 .container {
   max-width: 1080px;
   margin: auto;
-  padding: 0 32px;
+  padding: 0 40px;
 }
 
 /* Force mobile padding */
 @media (max-width: 639px) {
   .container {
-    padding: 0 32px !important;
+    padding: 0 40px !important;
   }
 }
 
 @media (min-width: 640px) {
   .container {
-    padding: 0 48px;
+    padding: 0 60px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 0 64px;
+    padding: 0 80px;
   }
 }
 
