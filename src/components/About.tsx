@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <section id="about" className="about container">
-      <div className="about-main grid grid-cols-1 lg:grid-cols-[0.6fr_1.4fr] gap-6 lg:gap-9 items-center mb-12">
+      <div className="about-main grid grid-cols-1 md:grid-cols-[0.5fr_1.5fr] lg:grid-cols-[0.6fr_1.4fr] gap-6 md:gap-8 lg:gap-9 items-center mb-12">
         <div 
           ref={photoRef.ref} 
           className={`about-photo hidden lg:block slide-in-left ${photoRef.isVisible ? 'animate' : ''}`}

@@ -8,7 +8,7 @@ export default function Hero() {
   const photoRef = useSlideInRight();
   
   return (
-    <section id="hero" className="hero grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-9 items-center container">
+    <section id="hero" className="hero grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] lg:grid-cols-[1.1fr_0.9fr] gap-6 md:gap-8 lg:gap-9 items-center container">
       <div 
         ref={textRef.ref} 
         className={`hero-text fade-in-up ${textRef.isVisible ? 'animate' : ''}`}

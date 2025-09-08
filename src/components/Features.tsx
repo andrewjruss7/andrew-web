@@ -26,7 +26,7 @@ export default function Features() {
   return (
     <section ref={revealRef} id="features" className="features container reveal">
       <h2 className="text-2xl sm:text-3xl m-0 mb-3.5">Cómo trabajo</h2>
-      <ul className="steps list-none p-0 m-0 grid grid-cols-1 gap-3.5 w-full max-w-md mx-auto">
+      <ul className="steps list-none p-0 m-0 grid grid-cols-1 md:grid-cols-2 gap-3.5 w-full max-w-md md:max-w-2xl mx-auto">
         {features.map((feature, index) => (
           <li key={index} className="flex gap-3 items-start border border-line rounded-custom p-3 sm:p-4 bg-white">
             <span className="icon-check inline-grid place-items-center w-6 h-6 rounded-md border-2 border-ink font-extrabold flex-shrink-0" aria-hidden="true">
