@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div 
         ref={photoRef.ref} 
-        className={`hero-photo w-full max-w-[520px] mx-auto lg:mx-0 lg:w-[520px] aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
+        className={`hero-photo hidden lg:block w-full max-w-[520px] mx-auto lg:mx-0 lg:w-[520px] aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
       >
         <img 
           src="/andrew.jpg" 
