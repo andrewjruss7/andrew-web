@@ -63,7 +63,7 @@ export default function Plans() {
       </h2>
       <div 
         ref={cardsRef.ref} 
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 scale-in ${cardsRef.isVisible ? 'animate' : ''}`}
+        className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 scale-in ${cardsRef.isVisible ? 'animate' : ''}`}
       >
         {plans.map((plan, index) => (
           <div 

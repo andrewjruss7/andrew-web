@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <section id="about" className="about container">
-      <div className="about-main grid grid-cols-1 md:grid-cols-[0.5fr_1.5fr] lg:grid-cols-[0.6fr_1.4fr] gap-6 md:gap-8 lg:gap-9 items-center mb-12">
+      <div className="about-main flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12 mb-12">
         <div 
           ref={photoRef.ref} 
           className={`about-photo hidden lg:block slide-in-left ${photoRef.isVisible ? 'animate' : ''}`}
@@ -43,7 +43,7 @@ export default function About() {
         
         <div 
           ref={textRef.ref} 
-          className={`fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
+          className={`flex-1 fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
         >
           <h2 className="text-2xl sm:text-3xl m-0 mb-3.5 font-black">Quién soy</h2>
           <p className="text-[#68707d] text-base sm:text-lg mb-6 font-medium">
@@ -57,7 +57,7 @@ export default function About() {
           </p>
           
           <h3 className="text-xl sm:text-2xl m-0 mb-4 font-bold">Cómo trabajo</h3>
-          <ul className="steps list-none p-0 m-0 grid grid-cols-1 gap-4 w-full max-w-sm mx-auto lg:max-w-none lg:mx-0">
+          <ul className="steps list-none p-0 m-0 grid grid-cols-1 md:grid-cols-2 gap-4">
             {features.map((feature, index) => (
               <li 
                 key={index} 

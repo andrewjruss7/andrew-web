@@ -67,7 +67,7 @@ export default function ContactForm() {
       <h2 className="text-2xl sm:text-3xl m-0 mb-3.5 font-bold">Demo: Integración de Email Automático</h2>
       <p className="sub text-[#68707d] m-0 mb-3 font-medium text-sm sm:text-base">Esta es una demostración de cómo funciona la integración de email automático en las páginas web que desarrollo. Completa el formulario y verás cómo tus clientes recibirán emails automáticamente.</p>
       
-      <form onSubmit={handleSubmit} className="form grid grid-cols-1 md:grid-cols-2 gap-3.5 border border-line rounded-2xl p-4 md:p-4.5 bg-soft">
+      <form onSubmit={handleSubmit} className="form grid grid-cols-1 md:grid-cols-2 gap-4 border border-line rounded-2xl p-6 bg-soft">
         <div className="field flex flex-col gap-1.5">
           <label htmlFor="name" className="font-semibold">Nombre</label>
           <input 

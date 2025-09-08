@@ -13,7 +13,7 @@ export default function Projects() {
         Algunos de los proyectos en los que he trabajado, desarrollando soluciones web modernas y escalables.
       </p>
       
-      <div className="project-grid grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 max-w-5xl md:max-w-6xl mx-auto">
+      <div className="project-grid grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         <div className="project-card">
           <div className="project-preview">
             <iframe
