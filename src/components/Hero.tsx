@@ -8,13 +8,13 @@ export default function Hero() {
   const photoRef = useSlideInRight();
   
   return (
-    <section id="hero" className="hero grid grid-cols-[1.1fr_0.9fr] gap-9 items-center container">
+    <section id="hero" className="hero grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-9 items-center container">
       <div 
         ref={textRef.ref} 
         className={`hero-text fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
       >
-        <h1 className="text-5xl leading-tight m-0 mb-3 tracking-tight font-black">Web Developer</h1>
-        <p className="text-[#68707d] text-lg m-0 mb-5 font-medium">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight m-0 mb-3 tracking-tight font-black">Web Developer</h1>
+        <p className="text-[#68707d] text-base sm:text-lg m-0 mb-5 font-medium">
           Diseño y desarrollo <strong>landing pages</strong> modernas con <strong>integraciones reales</strong>:
           formularios conectados a sistemas de email, implementaciones, animaciones sutiles y enfoque en performance.
         </p>
@@ -26,7 +26,7 @@ export default function Hero() {
             Ver planes
           </a>
         </div>
-        <ul className="badges flex gap-3.5 list-none p-0 mt-4.5 mb-0 text-[#68707d] text-sm font-medium" aria-label="Habilidades clave">
+        <ul className="badges flex flex-wrap gap-3 sm:gap-3.5 list-none p-0 mt-4.5 mb-0 text-[#68707d] text-sm font-medium" aria-label="Habilidades clave">
           <li title="HTML/CSS/JS" className="flex items-center">
             <Code className="w-4.5 h-4.5 mr-1.5" />
             HTML • CSS • JS
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div 
         ref={photoRef.ref} 
-        className={`hero-photo w-[520px] aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
+        className={`hero-photo w-full max-w-[520px] mx-auto lg:mx-0 lg:w-[520px] aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
       >
         <img 
           src="/andrew.jpg" 

@@ -25,16 +25,16 @@ export default function Features() {
 
   return (
     <section ref={revealRef} id="features" className="features container reveal">
-      <h2 className="text-3xl m-0 mb-3.5">Cómo trabajo</h2>
-      <ul className="steps list-none p-0 m-0 grid grid-cols-2 gap-3.5">
+      <h2 className="text-2xl sm:text-3xl m-0 mb-3.5">Cómo trabajo</h2>
+      <ul className="steps list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         {features.map((feature, index) => (
-          <li key={index} className="flex gap-3 items-start border border-line rounded-custom p-4 bg-white">
-            <span className="icon-check inline-grid place-items-center w-6 h-6 rounded-md border-2 border-ink font-extrabold" aria-hidden="true">
+          <li key={index} className="flex gap-3 items-start border border-line rounded-custom p-3 sm:p-4 bg-white">
+            <span className="icon-check inline-grid place-items-center w-6 h-6 rounded-md border-2 border-ink font-extrabold flex-shrink-0" aria-hidden="true">
               ✓
             </span>
             <div>
-              <h4 className="m-0 mb-1">{feature.title}</h4>
-              <p className="m-0">{feature.description}</p>
+              <h4 className="m-0 mb-1 text-sm sm:text-base font-semibold">{feature.title}</h4>
+              <p className="m-0 text-xs sm:text-sm text-[#68707d] font-medium">{feature.description}</p>
             </div>
           </li>
         ))}

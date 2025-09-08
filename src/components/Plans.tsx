@@ -57,13 +57,13 @@ export default function Plans() {
     <section id="plans" className="plans container">
       <h2 
         ref={titleRef.ref} 
-        className={`text-3xl m-0 mb-8 font-bold fade-in-up ${titleRef.isVisible ? 'animate' : ''}`}
+        className={`text-2xl sm:text-3xl m-0 mb-8 font-bold fade-in-up ${titleRef.isVisible ? 'animate' : ''}`}
       >
         Servicios
       </h2>
       <div 
         ref={cardsRef.ref} 
-        className={`grid grid-cols-1 md:grid-cols-3 gap-6 scale-in ${cardsRef.isVisible ? 'animate' : ''}`}
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 scale-in ${cardsRef.isVisible ? 'animate' : ''}`}
       >
         {plans.map((plan, index) => (
           <div 

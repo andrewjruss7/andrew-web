@@ -66,7 +66,13 @@ body {
 .container {
   max-width: 1080px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 /* Reveal animation */
@@ -83,7 +89,13 @@ body {
 
 /* Hero section spacing */
 .hero {
-  padding: 60px 0 40px 0;
+  padding: 40px 0 30px 0;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 60px 0 40px 0;
+  }
 }
 
 /* About section spacing */
@@ -98,7 +110,13 @@ body {
 .about-photo {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .about-photo {
+    min-height: 500px;
+  }
 }
 
 .about-photo .photo-frame {
@@ -154,8 +172,14 @@ body {
 
 /* Features section spacing */
 .features {
-  padding: 80px 0;
+  padding: 40px 0;
   border-top: 1px solid var(--color-line);
+}
+
+@media (min-width: 640px) {
+  .features {
+    padding: 80px 0;
+  }
 }
 
 .features h2, .about h2, .form-section h2, .plans h2 {
@@ -199,8 +223,14 @@ body {
 
 /* Projects section spacing */
 .projects {
-  padding: 80px 0;
+  padding: 40px 0;
   border-top: 1px solid var(--color-line);
+}
+
+@media (min-width: 640px) {
+  .projects {
+    padding: 80px 0;
+  }
 }
 
 .project-grid {
@@ -300,8 +330,14 @@ body {
 
 /* Plans section spacing */
 .plans {
-  padding: 80px 0;
+  padding: 40px 0;
   border-top: 1px solid var(--color-line);
+}
+
+@media (min-width: 640px) {
+  .plans {
+    padding: 80px 0;
+  }
 }
 
 
@@ -644,34 +680,7 @@ body {
 }
 
 /* Responsive styles */
-@media (max-width: 980px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .steps {
-    grid-template-columns: 1fr;
-  }
-  .plan-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-photo {
-    width: 100%;
-    max-width: 560px;
-    margin: 0 auto;
-  }
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   .nav-toggle {
     display: block;
   }
@@ -691,18 +700,24 @@ body {
   .nav-links.open {
     display: flex;
   }
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-  .form {
-    grid-template-columns: 1fr;
-  }
   .project-preview {
-    height: 300px;
+    height: 250px;
   }
   .project-iframe {
-    transform: scale(0.3);
-    width: 333%;
-    height: 333%;
+    transform: scale(0.25);
+    width: 400%;
+    height: 400%;
+  }
+  .service-card {
+    padding: 1rem !important;
+  }
+  .service-card h3 {
+    font-size: 1.25rem !important;
+  }
+  .service-card ul {
+    gap: 0.75rem !important;
+  }
+  .service-card li {
+    font-size: 0.875rem !important;
   }
 }

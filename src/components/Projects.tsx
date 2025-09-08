@@ -8,12 +8,12 @@ export default function Projects() {
 
   return (
     <section ref={revealRef} id="projects" className="projects container reveal">
-      <h2 className="text-3xl m-0 mb-3.5 font-bold">Proyectos Destacados</h2>
-      <p className="sub text-[#68707d] m-0 mb-8 font-medium">
+      <h2 className="text-2xl sm:text-3xl m-0 mb-3.5 font-bold">Proyectos Destacados</h2>
+      <p className="sub text-[#68707d] m-0 mb-8 font-medium text-sm sm:text-base">
         Algunos de los proyectos en los que he trabajado, desarrollando soluciones web modernas y escalables.
       </p>
       
-      <div className="project-grid">
+      <div className="project-grid grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         <div className="project-card">
           <div className="project-preview">
             <iframe
