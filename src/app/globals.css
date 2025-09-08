@@ -207,6 +207,17 @@ body {
   }
 }
 
+/* Hero section h1 spacing */
+.hero h1 {
+  padding-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    padding-top: 1.5rem;
+  }
+}
+
 /* About section h3 spacing */
 .about h3 {
   padding-top: 1.5rem;
