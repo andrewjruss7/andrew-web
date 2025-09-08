@@ -9,10 +9,10 @@ export default function Hero() {
   
   return (
     <section id="hero" className="hero container">
-      <div className="hero-content flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+      <div className="hero-content flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 w-full">
         <div 
           ref={textRef.ref} 
-          className={`hero-text flex-1 fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
+          className={`hero-text flex-1 w-full fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight m-0 mb-4 tracking-tight font-black">Web Developer</h1>
           <p className="text-[#68707d] text-base sm:text-lg m-0 mb-6 font-medium">
