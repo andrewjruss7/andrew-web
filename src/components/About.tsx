@@ -30,7 +30,7 @@ export default function About() {
       <div className="about-main grid grid-cols-1 lg:grid-cols-[0.6fr_1.4fr] gap-6 lg:gap-9 items-center mb-12">
         <div 
           ref={photoRef.ref} 
-          className={`about-photo slide-in-left ${photoRef.isVisible ? 'animate' : ''}`}
+          className={`about-photo hidden lg:block slide-in-left ${photoRef.isVisible ? 'animate' : ''}`}
         >
           <div className="photo-frame">
             <img 
