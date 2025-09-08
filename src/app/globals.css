@@ -195,9 +195,27 @@ body {
   }
 }
 
-.features h2, .about h2, .form-section h2, .plans h2 {
+.features h2, .about h2, .form-section h2, .plans h2, .projects h2 {
   font-size: 2.2rem;
   margin: 0 0 24px;
+  padding-top: 2rem;
+}
+
+@media (min-width: 640px) {
+  .features h2, .about h2, .form-section h2, .plans h2, .projects h2 {
+    padding-top: 3rem;
+  }
+}
+
+/* About section h3 spacing */
+.about h3 {
+  padding-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .about h3 {
+    padding-top: 2rem;
+  }
 }
 
 .steps {
