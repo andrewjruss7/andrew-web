@@ -8,7 +8,7 @@ export default function Hero() {
   const photoRef = useSlideInRight();
   
   return (
-    <section id="hero" className="hero grid grid-cols-1 md:grid-cols-[1.4fr_0.6fr] lg:grid-cols-[1.1fr_0.9fr] gap-6 md:gap-8 lg:gap-9 items-center container">
+    <section id="hero" className="hero grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-9 items-center container">
       <div 
         ref={textRef.ref} 
         className={`hero-text fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div 
         ref={photoRef.ref} 
-        className={`hero-photo w-full max-w-[400px] md:max-w-[450px] lg:max-w-[520px] mx-auto lg:mx-0 aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
+        className={`hero-photo hidden lg:block w-full max-w-[520px] mx-auto lg:mx-0 aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
       >
         <img 
           src="/andrew.jpg" 
