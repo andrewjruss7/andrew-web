@@ -46,9 +46,9 @@ export default function Hero() {
         className={`hero-photo w-full max-w-[520px] mx-auto lg:mx-0 lg:w-[520px] aspect-[191/100] overflow-hidden rounded-custom shadow-custom slide-in-right ${photoRef.isVisible ? 'animate' : ''}`}
       >
         <img 
-          src="/andrew-2.jpg" 
+          src="/andrew.jpg" 
           alt="Foto de Andrew" 
-          className="block w-full h-full object-cover object-[50%_15%]"
+          className="block w-full h-full object-cover object-[50%_60%]"
         />
       </div>
     </section>
