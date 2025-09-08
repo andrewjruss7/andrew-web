@@ -21,8 +21,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="site-footer py-12 bg-black text-white mt-10">
-      <div className="container">
+    <footer className="site-footer py-12 bg-black text-white mt-10 -mx-4 md:-mx-6 lg:mx-0">
+      <div className="container px-4 md:px-6 lg:px-0">
         {/* Sección de contacto distribuida */}
         <div className="mb-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

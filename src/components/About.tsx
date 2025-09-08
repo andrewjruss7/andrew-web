@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <section id="about" className="about container">
-      <div className="about-main flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12 mb-12 w-full">
+      <div className="about-main grid grid-cols-1 lg:grid-cols-[1.4fr_0.6fr] gap-8 lg:gap-12 mb-12 w-full">
         <div 
           ref={photoRef.ref} 
           className={`about-photo hidden lg:block slide-in-left ${photoRef.isVisible ? 'animate' : ''}`}
@@ -43,7 +43,7 @@ export default function About() {
         
         <div 
           ref={textRef.ref} 
-          className={`flex-1 w-full fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
+          className={`w-full fade-in-up ${textRef.isVisible ? 'animate' : ''}`}
         >
           <h2 className="text-2xl sm:text-3xl m-0 mb-3.5 font-black">Quién soy</h2>
           <p className="text-[#68707d] text-base sm:text-lg mb-6 font-medium">

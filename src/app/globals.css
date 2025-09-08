@@ -61,12 +61,25 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
   min-height: 100vh;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
 }
 
 .container {
   max-width: 1080px;
   margin: auto;
-  padding: 0 2rem !important;
+  padding: 0 1rem !important;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem !important;
+  }
 }
 
 /* Reveal animation */
