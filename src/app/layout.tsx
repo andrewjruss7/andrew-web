@@ -12,7 +12,40 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Andrew — Web Developer",
-  description: "Diseño y desarrollo landing pages modernas con integraciones reales, animaciones sutiles y enfoque en performance.",
+  description: "Construyo sitios web que convierten. Formularios conectados, animaciones limpias y performance optimizada.",
+  openGraph: {
+    title: "Andrew — Web Developer",
+    description: "Construyo sitios web que convierten. Formularios conectados, animaciones limpias y performance optimizada.",
+    url: "https://andrewweb.vercel.app",
+    siteName: "Andrew — Web Developer",
+    images: [
+      {
+        url: "https://andrewweb.vercel.app/andrew.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Andrew - Desarrollador Web",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Andrew — Web Developer",
+    description: "Construyo sitios web que convierten. Formularios conectados, animaciones limpias y performance optimizada.",
+    images: ["https://andrewweb.vercel.app/andrew.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
