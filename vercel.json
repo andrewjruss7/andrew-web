@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "version": 2,
   "rewrites": [
     { "source": "/", "destination": "/landing-programamos/landing/index.html" },
@@ -7,3 +8,12 @@
     { "source": "/(.*)", "destination": "/landing-programamos/landing/$1" }
   ]
 }
+=======
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "outputDirectory": ".next"
+}
+
+>>>>>>> c24ca02c99f57d5cc661c11dd10e74edd788365f
